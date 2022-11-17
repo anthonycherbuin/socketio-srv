@@ -20,7 +20,7 @@ const io = new Server(httpsServer, {
 });
 
 
-httpsServer.listen(process.env.PORT || 4000, () => {
+httpsServer.listen(4000, () => {
   console.log('init https io server listening on ::4000',process.env.PORT);
 });
 
