@@ -1,7 +1,7 @@
 import express from "express";
 // import fs from "fs";
 const app = express();
-import { createServer } from "https";
+import { createServer } from "http";
 import { Server } from "socket.io";
 
 
@@ -21,7 +21,7 @@ const io = new Server(httpsServer, {
 
 
 httpsServer.listen(process.env.PORT || 4000, () => {
-  console.log('init https io server listening on ::4000');
+  console.log('init https io server listening on ::4000',process.env.PORT);
 });
 
 // Register "connection" events to the WebSocket
