@@ -19,9 +19,9 @@ const io = new Server(httpsServer, {
   methods: ["GET", "POST"]
 });
 
-
-httpsServer.listen(4000, () => {
-  console.log('init https io server listening on ::4000',process.env.PORT);
+const PORT = process.env.PORT;
+httpsServer.listen(PORT || 4000, () => {
+  console.log('init https io server listening on:', PORT);
 });
 
 // Register "connection" events to the WebSocket
