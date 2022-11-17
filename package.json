@@ -1,0 +1,15 @@
+{
+  "name": "socketsrv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "socketserver.js",
+  "scripts": {
+    "start": "node socketserver.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "author": "",
+  "license": "ISC"
+}
