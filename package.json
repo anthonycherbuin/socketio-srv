@@ -4,7 +4,7 @@
   "description": "",
   "main": "socketserver.js",
   "scripts": {
-    "start": "node socketserver2.js",
+    "start": "node socketserver3.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
@@ -15,6 +15,5 @@
   "dependencies": {
     "express": "^4.18.2",
     "socket.io": "^4.5.3"
-  },
-  "type": "module"
+  }
 }
